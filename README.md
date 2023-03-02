@@ -16,9 +16,21 @@ Linux both X11 and Wayland are supported.
 GLFWFF is licensed under the [zlib/libpng
 license](https://www.glfw.org/license.html).
 
-GLFWFF is fully backwards compatible with GLFW v3.3, but has additional features 
+GLFWFF is fully backwards compatible with GLFW v3.3, but has additional features
 which are not yet merged into GLFW. The version number therefore is v3.4.
-When GLFW releases v3.4, we will release GLFWFF v3.5, etc.
+It is intended to be a more fully featured, faster moving personal soft fork
+of GLFW, with the hope it will be useful to those who need those features.
+
+Any proposed feature patch that is now not yet merged into GLFW but that matches
+the following criteria will be considered for merging into GLFWFF:
+
+1. The feature patch is backwards compatible with GLFW 3.3.
+   This means the poatch does not change or remove any existing API.
+2. The feature patch has a reasonable API.
+3. The feature patch works more or less on several platforms.
+4. Features for internationalization, IME, etc will be given priority over
+   other cosmetic issues.
+5. Disruptive changes will be refused.
 
 The `master` branch is the stable integration branch and _should_ always compile
 and run on all supported platforms, although details of newly added features may
@@ -62,7 +74,7 @@ and the API reference.
 
 ## Contributing to GLFWFF
 
-If you have a backwards compatible feature for GLFWFF 
+If you have a backwards compatible feature for GLFWFF
 that you would like to use, please make a PR and it is likely to get accepted.
 
 
