@@ -1,6 +1,6 @@
 # Acknowledgements
 
-GLFW exists because people around the world donated their time and lent their
+GLFWFF exists because people around the world donated their time and lent their
 skills.  This list only includes contributions to the main repository and
 excludes other invaluable contributions like language bindings and text and
 video tutorials.
@@ -262,6 +262,7 @@ video tutorials.
  - Lasse Öörni
  - Leonard König
  - Daijiro Fukuda
+ - envyen
  - All the unmentioned and anonymous contributors in the GLFW community, for bug
    reports, patches, feedback, testing and encouragement
 
