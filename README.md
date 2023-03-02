@@ -1,4 +1,4 @@
-# GLFW
+# GLFWFF
 
 [![Build status](https://github.com/glfw/glfw/actions/workflows/build.yml/badge.svg)](https://github.com/glfw/glfw/actions)
 [![Build status](https://ci.appveyor.com/api/projects/status/0kf0ct9831i5l6sp/branch/master?svg=true)](https://ci.appveyor.com/project/elmindreda/glfw)
@@ -6,26 +6,31 @@
 
 ## Introduction
 
-GLFW is an Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan
+GLFWFF is an Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan
 application development.  It provides a simple, platform-independent API for
 creating windows, contexts and surfaces, reading input, handling events, etc.
 
-GLFW natively supports Windows, macOS and Linux and other Unix-like systems.  On
+GLFWFF natively supports Windows, macOS and Linux and other Unix-like systems.  On
 Linux both X11 and Wayland are supported.
 
-GLFW is licensed under the [zlib/libpng
+GLFWFF is licensed under the [zlib/libpng
 license](https://www.glfw.org/license.html).
 
-You can [download](https://www.glfw.org/download.html) the latest stable release
-as source or Windows binaries, or fetch the `latest` branch from GitHub.  Each
-release starting with 3.0 also has a corresponding [annotated
-tag](https://github.com/glfw/glfw/releases) with source and binary archives.
+GLFWFF is fully backwards compatible with GLFW v3.3, but has additional features
+which are not yet merged into GLFW. The version number therefore is v3.4.
+It is intended to be a more fully featured, faster moving personal soft fork
+of GLFW, with the hope it will be useful to those who need those features.
 
-The [documentation](https://www.glfw.org/docs/latest/) is available online and is
-included in all source and binary archives.  See the [release
-notes](https://www.glfw.org/docs/latest/news.html) for new features, caveats and
-deprecations in the latest release.  For more details see the [version
-history](https://www.glfw.org/changelog.html).
+Any proposed feature patch that is now not yet merged into GLFW but that matches
+the following criteria will be considered for merging into GLFWFF:
+
+1. The feature patch is backwards compatible with GLFW 3.3.
+   This means the poatch does not change or remove any existing API.
+2. The feature patch has a reasonable API.
+3. The feature patch works more or less on several platforms.
+4. Features for internationalization, IME, etc will be given priority over
+   other cosmetic issues.
+5. Disruptive changes will be refused.
 
 The `master` branch is the stable integration branch and _should_ always compile
 and run on all supported platforms, although details of newly added features may
@@ -39,47 +44,43 @@ you have used GLFW 2 in the past, there is a [transition
 guide](https://www.glfw.org/docs/latest/moving.html) for moving to the GLFW
 3 API.
 
-GLFW exists because of the contributions of [many people](CONTRIBUTORS.md)
+GLFWFF exists because of the contributions of [many people](CONTRIBUTORS.md)
 around the world, whether by reporting bugs, providing community support, adding
 features, reviewing or testing code, debugging, proofreading docs, suggesting
 features or fixing bugs.
 
 
-## Compiling GLFW
+## Compiling GLFWFF
 
-GLFW itself requires only the headers and libraries for your OS and window
+GLFWFF itself requires only the headers and libraries for your OS and window
 system.  It does not need the headers for any context creation API (WGL, GLX,
 EGL, NSGL, OSMesa) or rendering API (OpenGL, OpenGL ES, Vulkan) to enable
 support for them.
 
-GLFW supports compilation on Windows with Visual C++ 2010 and later, MinGW and
+GLFWFF supports compilation on Windows with Visual C++ 2010 and later, MinGW and
 MinGW-w64, on macOS with Clang and on Linux and other Unix-like systems with GCC
 and Clang.  It will likely compile in other environments as well, but this is
 not regularly tested.
-
-There are [pre-compiled Windows binaries](https://www.glfw.org/download.html)
-available for all supported compilers.
 
 See the [compilation guide](https://www.glfw.org/docs/latest/compile.html) for
 more information about how to compile GLFW yourself.
 
 
-## Using GLFW
+## Using GLFWFF
 
 See the [documentation](https://www.glfw.org/docs/latest/) for tutorials, guides
 and the API reference.
 
 
-## Contributing to GLFW
+## Contributing to GLFWFF
 
-See the [contribution
-guide](https://github.com/glfw/glfw/blob/master/docs/CONTRIBUTING.md) for
-more information.
+If you have a backwards compatible feature for GLFWFF
+that you would like to use, please make a PR and it is likely to get accepted.
 
 
 ## System requirements
 
-GLFW supports Windows XP and later and macOS 10.8 and later.  Linux and other
+GLFWFF supports Windows XP and later and macOS 10.8 and later.  Linux and other
 Unix-like systems running the X Window System are supported even without
 a desktop environment or modern extensions, although some features require
 a running window or clipboard manager.  The OSMesa backend requires Mesa 6.3.
@@ -90,7 +91,7 @@ in the documentation for more information.
 
 ## Dependencies
 
-GLFW itself needs only CMake 3.1 or later and the headers and libraries for your
+GLFWFF itself needs only CMake 3.1 or later and the headers and libraries for your
 OS and window system.
 
 The examples and test programs depend on a number of tiny libraries.  These are
@@ -113,9 +114,9 @@ find that tool.
 
 ## Reporting bugs
 
-Bugs are reported to our [issue tracker](https://github.com/glfw/glfw/issues).
+Bugs are reported to our [issue tracker](https://github.com/bjorndm/glfwff/issues).
 Please check the [contribution
-guide](https://github.com/glfw/glfw/blob/master/docs/CONTRIBUTING.md) for
+guide](https://github.com/bjorndm/glfwff/blob/master/docs/CONTRIBUTING.md) for
 information on what to include when reporting a bug.
 
 
