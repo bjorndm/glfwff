@@ -3950,7 +3950,7 @@ GLFWAPI void glfwFocusWindow(GLFWwindow* window);
  *
  *  @thread_safety This function must only be called from the main thread.
  *
- *  @since Added in version 3.4.
+ *  @since Added in glfwff version 3.4.
  *
  *  @ingroup window
  */
