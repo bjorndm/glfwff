@@ -1119,7 +1119,7 @@ extern "C" {
 #define GLFW_WIN32_KEYBOARD_MENU    0x00025001
 /*! @brief Wayland specific
  *  [window hint](@ref GLFW_WAYLAND_APP_ID_hint).
- *  
+ *
  *  Allows specification of the Wayland app_id.
  */
 #define GLFW_WAYLAND_APP_ID         0x00026001
@@ -1943,6 +1943,8 @@ typedef void (* GLFWpreeditfun)(GLFWwindow* window,
  *  @sa @ref ime_support
  *  @sa glfwSetIMEStatusCallback
  *
+ *  @since Added in glfwff version 3.4.
+ *
  *  @ingroup monitor
  */
 typedef void (* GLFWimestatusfun)(GLFWwindow* window);
@@ -1961,6 +1963,8 @@ typedef void (* GLFWimestatusfun)(GLFWwindow* window);
  *  @sa @ref ime_support
  *  @sa @ref glfwSetPreeditCandidateCallback
  *  @sa @ref glfwGetPreeditCandidate
+ *
+ *  @since Added in glfwff version 3.4.
  *
  *  @ingroup input
  */
@@ -5174,7 +5178,7 @@ GLFWAPI void glfwSetPreeditCursorRectangle(GLFWwindow* window, int x, int y, int
  *
  *  @sa @ref ime_support
  *
- *  @since Added in GLFW 3.X.
+ *  @since Added in glfwff version 3.4.
  *
  *  @ingroup input
  */
@@ -5202,7 +5206,7 @@ GLFWAPI void glfwResetPreeditText(GLFWwindow* window);
  *  @sa @ref glfwSetPreeditCandidateCallback
  *  @sa [GLFW_MANAGE_PREEDIT_CANDIDATE](@ref GLFW_MANAGE_PREEDIT_CANDIDATE_hint)
  *
- *  @since Added in GLFW 3.X.
+ *  @since Added in glfwff version 3.4.
  *
  *  @ingroup input
  */
@@ -5379,7 +5383,7 @@ GLFWAPI GLFWcharmodsfun glfwSetCharModsCallback(GLFWwindow* window, GLFWcharmods
  *
  *  @sa @ref ime_support
  *
- *  @since Added in GLFW 3.X
+ *  @since Added in glfwff version 3.4.
  *
  *  @ingroup input
  */
@@ -5410,7 +5414,7 @@ GLFWAPI GLFWpreeditfun glfwSetPreeditCallback(GLFWwindow* window, GLFWpreeditfun
  *
  *  @sa @ref ime_support
  *
- *  @since Added in GLFW 3.X
+ *  @since Added in glfwff version 3.4.
  *
  *  @ingroup input
  */
@@ -5424,11 +5428,11 @@ GLFWAPI GLFWimestatusfun glfwSetIMEStatusCallback(GLFWwindow* window, GLFWimesta
  *
  *  By default, this callback is not called because the IME displays the
  *  candidates and there is nothing to do on the application side.  Only when
- *  the application side needs to use this to manage the displaying of 
+ *  the application side needs to use this to manage the displaying of
  *  IME candidates, you can set
  *  [GLFW_MANAGE_PREEDIT_CANDIDATE](@ref GLFW_MANAGE_PREEDIT_CANDIDATE_hint) init hint
  *  and stop the IME from managing it.
- * 
+ *
  *  @param[in] window The window whose callback to set.
  *  @param[in] cbfun The new callback, or `NULL` to remove the currently set
  *  callback.
@@ -5455,7 +5459,7 @@ GLFWAPI GLFWimestatusfun glfwSetIMEStatusCallback(GLFWwindow* window, GLFWimesta
  *  @sa @ref ime_support
  *  @sa [GLFW_MANAGE_PREEDIT_CANDIDATE](@ref GLFW_MANAGE_PREEDIT_CANDIDATE_hint)
  *
- *  @since Added in GLFW 3.X
+ *  @since Added in glfwff version 3.4.
  *
  *  @ingroup input
  */
