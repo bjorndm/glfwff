@@ -25,7 +25,7 @@ Any proposed feature patch that is now not yet merged into GLFW but that matches
 the following criteria will be considered for merging into GLFWFF:
 
 1. The feature patch is backwards compatible with GLFW 3.3.
-   This means the poatch does not change or remove any existing API.
+   This means the patch does not change or remove any existing API.
 2. The feature patch has a reasonable API.
 3. The feature patch works more or less on several platforms.
 4. Features for internationalization, IME, etc will be given priority over
@@ -123,6 +123,7 @@ information on what to include when reporting a bug.
 ## Changelog
 
  - Added `glfwDragWindow` function for starting a drag operation on a window
+ - Added support for input methods (#2130)
  - Added `GLFW_PLATFORM` init hint for runtime platform selection (#1958)
  - Added `GLFW_ANY_PLATFORM`, `GLFW_PLATFORM_WIN32`, `GLFW_PLATFORM_COCOA`,
    `GLFW_PLATFORM_WAYLAND`, `GLFW_PLATFORM_X11` and `GLFW_PLATFORM_NULL` symbols to
