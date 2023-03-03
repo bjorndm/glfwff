@@ -1,5 +1,5 @@
 /*************************************************************************
- * GLFW 3.4 - www.glfw.org
+ * GLFWFF 3.4 - based on www.glfw.org
  * A library for OpenGL, window and input
  *------------------------------------------------------------------------
  * Copyright (c) 2002-2006 Marcus Geelnard
@@ -5151,7 +5151,7 @@ GLFWAPI void glfwSetCursor(GLFWwindow* window, GLFWcursor* cursor);
  *
  *  @sa @ref ime_support
  *
- *  @since Added in GLFW 3.X.
+ *  @since Added in GLFW 3.4.
  *
  *  @ingroup input
  */
@@ -5173,7 +5173,7 @@ GLFWAPI void glfwGetPreeditCursorRectangle(GLFWwindow* window, int* x, int* y, i
  *
  *  @sa @ref ime_support
  *
- *  @since Added in GLFW 3.X.
+ *  @since Added in GLFW 3.4.
  *
  *  @ingroup input
  */
